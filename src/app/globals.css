@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-accentColor_orange: #f9ac5c;
+  --color-accentColor_pink: #cc4f6d;
+  --color-accentColor_purple: #9266ab;
+  --color-primaryColor_black: #121212;
+  --color-primaryColor_black_800: #454545;
+  --color-primaryColor_black_700: #4f4f4f;
+  --color-primaryColor_black_400: #888888;
+  --color-primaryColor_black_300: #b0b0b0;
+  --color-primaryColor_black_200: #d1d1d1;
+  --color-secoundaryColor_white: #fafafa;
+  --color-gradientColor: linear-gradient(74deg, #f9ac5c 0%, #cc4f6d 50%, #9266ab 100%);
+  --color-gradientBackground: linear-gradient(74deg, #121212 0%, #454545 100%);
+
+  --text-paragraph: 1.063rem;
+  --text-header2: 2rem;
+  --text-header2Test: 4rem;
+  --color-boxColor_black_800: rgba(69, 69, 69, 0.2);
+  --color-boxColor_black_800Test: rgba(18, 18, 18, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@font-face {
+  font-family: "Poppins_bold";
+  src: url("/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins_meduim";
+  src: url("/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/static/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.animate-gradient {
+  animation: gradient 8s ease-in-out infinite;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+h1,
+h2 {
+  font-family: "Poppins_bold";
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins_meduim";
+}
+p {
+  font-family: "Roboto";
+}
