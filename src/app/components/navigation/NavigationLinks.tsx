@@ -25,7 +25,7 @@ const NavigationLinks = () => {
             className="inline-block  transition transform delay-150 duration-300 ease-in-out
              hover:-translate-y-1 hover:scale-110 text-secoundaryColor_white   bg-gradient-to-r from-[#f9ac5c] via-[#cc4f6d] to-[#9266ab] pl-8 pr-8 pt-2.5 pb-2.5 rounded-sm  "
           >
-            Get in thouch
+            Get in touch
           </Link>
         </li>
       </ul>
