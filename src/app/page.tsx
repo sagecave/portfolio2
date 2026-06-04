@@ -31,19 +31,58 @@ export default function Home() {
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
             {
-              title: "9TSEVEN",
-              description: "A fullstack website for a running community, featuring an online store for running clothing and event management. Built in a team of 3, where I contributed to both design and development.",
-              tags: ["Next.js", "Tailwind", "Supabase", "Stripe", "Tanstack Query", "Vercel", "Figma"],
-              link: "https://github.com/sagecave/web_9tseven-Improved",
-              live: "https://web-9tseven-improved.vercel.app/",
-            },
-            {
               title: "Running App (Early Demo)",
               description: "A personal mobile app that tracks runs, pace, and distance, built from scratch with React Native and Expo. Designed with simplicity in mind. Source is private, but you can see it in action via the demo.",
               tags: ["React Native", "Expo", "Node.js", "Docker", "Figma"],
               link: "",
               live: "",
               youtube: "https://youtu.be/wnqPepzd2-E",
+            },
+            {
+              title: "Onzet Running CI/CD",
+              description:
+                "A containerized fullstack running app project focused on Docker, CI/CD, automated testing, and deployment. The project uses a React Native frontend, Node.js/Express backend, MariaDB database, Nginx reverse proxy, and GitLab CI/CD pipeline.",
+              tags: ["Docker", "CI/CD", "GitLab", "Node.js", "Express", "MariaDB", "Nginx", "React Native"],
+              link: "https://github.com/sagecave/onzet_run_cicd",
+              live: "",
+            },
+            {
+              title: "StudyHelper LLM Exam",
+              description:
+                "A local AI study tool that generates flashcards from academic text using local LLMs, RAG concepts, and multi-agent orchestration with CrewAI. The project explores chunking, retrieval, prompt engineering, and local-first AI workflows.",
+              tags: ["Python", "CrewAI", "Ollama", "OpenWebUI", "RAG", "LLM", "Prompt Engineering", "AI"],
+              link: "https://github.com/sagecave/LLM-Exam",
+              live: "",
+            },
+
+            {
+              title: "Social Campus",
+              description: "A fullstack social media platform for students, built with authentication, posts, comments, likes, follows, user search, profile editing, image uploads, admin tools, and multilingual support.",
+              tags: ["Next.js", "React", "TypeScript", "Tailwind", "Flask", "MariaDB", "Docker", "REST API"],
+              link: "https://github.com/sagecave/social_campus_v2",
+              live: "",
+            },
+            {
+              title: "9TSEVEN",
+              description: "A fullstack website for a running community, featuring an online store for running clothing and event management. Built in a team of 3, where I contributed to both design and development.",
+              tags: ["Next.js", "Tailwind", "Supabase", "Stripe", "Tanstack Query", "Vercel", "Figma"],
+              link: "https://github.com/sagecave/web_9tseven-Improved",
+              live: "https://web-9tseven-improved.vercel.app/",
+            },
+
+            {
+              title: "VildMad",
+              description: "A web project focused on presenting content in a clear and user-friendly way. The project demonstrates frontend fundamentals, layout structure, and visual design work.",
+              tags: ["HTML", "CSS", "JavaScript", "UX/UI", "Frontend"],
+              link: "https://github.com/sagecave/vildMad",
+              live: "",
+            },
+            {
+              title: "Bilprojekt",
+              description: "A JavaScript project focused on vehicle data, filtering, and interactive UI logic. The project shows practical work with dynamic content and user-driven filtering.",
+              tags: ["JavaScript", "HTML", "CSS", "Filtering", "Frontend"],
+              link: "https://github.com/sagecave/bilprojekt",
+              live: "",
             },
           ].map((project, i) => (
             <div key={i} className="border border-white/10 rounded-2xl p-6 bg-white/5 flex flex-col justify-between gap-4 hover:border-white/20 transition-all">
